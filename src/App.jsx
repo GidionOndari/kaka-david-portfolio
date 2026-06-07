@@ -5,6 +5,7 @@ const navItems = [
   ['About', 'about'],
   ['Strengths', 'strengths'],
   ['Experience', 'experience'],
+  ['Evidence', 'evidence'],
   ['Projects', 'projects'],
   ['Skills', 'skills'],
   ['Certificates', 'certificates'],
@@ -48,6 +49,34 @@ function TagList({ items, tone = 'light' }) {
         </span>
       ))}
     </div>
+  )
+}
+
+function EvidenceCard({ item, image }) {
+  return (
+    <article className="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm dark:border-stone-700 dark:bg-stone-950">
+      <div className="aspect-[4/3] overflow-hidden bg-stone-100 dark:bg-stone-800">
+        <img
+          src={image.src}
+          alt={image.alt}
+          className={`h-full w-full object-cover ${image.objectPosition || 'object-[50%_42%]'}`}
+        />
+      </div>
+      <div className="p-5">
+        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700 dark:text-emerald-300">
+          {item.label}
+        </p>
+        <h3 className="mt-2 text-lg font-semibold text-stone-950 dark:text-stone-50">{item.title}</h3>
+        <ul className="mt-4 space-y-2 text-sm leading-6 text-stone-600 dark:text-stone-300">
+          {item.proof.map((point) => (
+            <li key={point} className="flex gap-2">
+              <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-emerald-700 dark:bg-emerald-400" />
+              <span>{point}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </article>
   )
 }
 
@@ -232,6 +261,38 @@ function App() {
                 </div>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section id="evidence" className="border-y border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900">
+          <div className="mx-auto max-w-7xl px-4 py-14 sm:px-8 sm:py-16">
+            <SectionHeader
+              eyebrow="Evidence"
+              title="Proof of practical agricultural exposure"
+              text="Concise visual evidence across research settings, crop work, horticulture, teaching, and animal production."
+            />
+            <div className="space-y-10">
+              {portfolio.evidenceSections.map((section) => (
+                <section key={section.title} aria-labelledby={`${section.eyebrow.replaceAll(' ', '-').toLowerCase()}-title`}>
+                  <div className="mb-5 max-w-3xl">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700 dark:text-emerald-300">
+                      {section.eyebrow}
+                    </p>
+                    <h3 id={`${section.eyebrow.replaceAll(' ', '-').toLowerCase()}-title`} className="mt-2 text-xl font-semibold text-stone-950 dark:text-stone-50 sm:text-2xl">
+                      {section.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-6 text-stone-600 dark:text-stone-300 sm:text-base">
+                      {section.text}
+                    </p>
+                  </div>
+                  <div className={`grid gap-5 ${section.items.length === 1 ? 'max-w-2xl' : 'md:grid-cols-2 lg:grid-cols-3'}`}>
+                    {section.items.map((item) => (
+                      <EvidenceCard key={`${section.title}-${item.title}`} item={item} image={images[item.imageKey]} />
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
           </div>
         </section>
 

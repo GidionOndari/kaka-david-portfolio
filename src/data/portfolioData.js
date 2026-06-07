@@ -20,7 +20,7 @@ export const portfolio = {
   ],
   contact: {
     location: 'Kenya',
-    email: 'ondarikakadavid@gmail.com',
+    email: 'ondarikakadavid1@gmail.com',
     phone: '+254 745 252 464',
     linkedin: 'https://www.linkedin.com/in/kaka-david-b494a03a3',
   },
@@ -58,9 +58,64 @@ export const portfolio = {
       alt: 'Institutional agricultural research exposure during International Day of Potato 2025',
       objectPosition: 'object-[50%_42%]',
     },
+    researchFavorite: {
+      src: '/images/kaka-david/04-research-institutional/potato-field-research-team-favorite.jpg',
+      alt: 'Potato field research team exposure in an institutional agricultural setting',
+      objectPosition: 'object-[50%_34%]',
+    },
     researchKalro: {
       src: '/images/kaka-david/04-research-institutional/kalro-fcrc-kabete-visit.jpg',
       alt: 'KALRO FCRC Kabete institutional agricultural research visit',
+      objectPosition: 'object-[50%_40%]',
+    },
+    soilExperiment: {
+      src: '/images/kaka-david/04-research-institutional/kalro-soil-fertility-experiment.jpg',
+      alt: 'KALRO soil fertility experiment showing field research exposure',
+      objectPosition: 'object-[50%_48%]',
+    },
+    informationResourceCentre: {
+      src: '/images/kaka-david/04-research-institutional/agricultural-information-resource-centre.jpg',
+      alt: 'Agricultural Information Resource Centre institutional learning exposure',
+      objectPosition: 'object-[50%_44%]',
+    },
+    sugarResearchGroup: {
+      src: '/images/kaka-david/04-research-institutional/kalro-sugar-research-group.jpg',
+      alt: 'KALRO sugar research group professional agricultural exposure',
+      objectPosition: 'object-[50%_42%]',
+    },
+    sugarResearchWide: {
+      src: '/images/kaka-david/04-research-institutional/kalro-sugar-research-wide-group.jpg',
+      alt: 'Wide KALRO sugar research group institutional exposure',
+      objectPosition: 'object-[50%_42%]',
+    },
+    potatoSprayer: {
+      src: '/images/kaka-david/03-experience/agronomy-support/potato-field-sprayer-monitoring.jpg',
+      alt: 'Potato field sprayer monitoring during agronomy operations',
+      objectPosition: 'object-[50%_44%]',
+    },
+    potatoObservationTeam: {
+      src: '/images/kaka-david/03-experience/agronomy-support/potato-field-observation-team.jpg',
+      alt: 'Team observation in a potato field during agronomy support work',
+      objectPosition: 'object-[50%_38%]',
+    },
+    potatoTeamVisit: {
+      src: '/images/kaka-david/03-experience/agronomy-support/potato-field-team-visit.jpg',
+      alt: 'Potato field team visit showing crop production exposure',
+      objectPosition: 'object-[50%_44%]',
+    },
+    inputPreparation: {
+      src: '/images/kaka-david/03-experience/agronomy-support/input-preparation-field-operations.jpg',
+      alt: 'Input preparation during practical field operations',
+      objectPosition: 'object-[50%_44%]',
+    },
+    nursery: {
+      src: '/images/kaka-david/06-gallery/nursery-seedling-inspection.jpg',
+      alt: 'Nursery seedling inspection showing horticulture exposure',
+      objectPosition: 'object-[50%_34%]',
+    },
+    floriculture: {
+      src: '/images/kaka-david/06-gallery/greenhouse-floriculture-exposure.jpg',
+      alt: 'Greenhouse floriculture exposure in protected agriculture',
       objectPosition: 'object-[50%_40%]',
     },
     livestock: {
@@ -72,6 +127,26 @@ export const portfolio = {
       src: '/images/kaka-david/05-livestock-exposure/calf-feeding-dairy-exposure.jpg',
       alt: 'Calf feeding practical exposure in a dairy livestock setting',
       objectPosition: 'object-[50%_28%]',
+    },
+    dairyUnitTeam: {
+      src: '/images/kaka-david/05-livestock-exposure/dairy-unit-team-practical.jpg',
+      alt: 'Dairy unit team practical exposure in animal production',
+      objectPosition: 'object-[50%_42%]',
+    },
+    sheepGoatUnit: {
+      src: '/images/kaka-david/05-livestock-exposure/sheep-goat-unit-exposure.jpg',
+      alt: 'Sheep and goat unit exposure in livestock production',
+      objectPosition: 'object-[50%_40%]',
+    },
+    cattleField: {
+      src: '/images/kaka-david/05-livestock-exposure/cattle-field-exposure.jpg',
+      alt: 'Cattle field exposure showing broader animal production learning',
+      objectPosition: 'object-[50%_38%]',
+    },
+    animalObservation: {
+      src: '/images/kaka-david/05-livestock-exposure/animal-production-observation.jpg',
+      alt: 'Animal production observation during livestock exposure',
+      objectPosition: 'object-[50%_40%]',
     },
     gallery: {
       src: '/images/kaka-david/06-gallery/wide-potato-field-presence.jpg',
@@ -112,6 +187,121 @@ export const portfolio = {
         'Prepared and delivered lessons',
         'Supported practical learning sessions',
         'Helped students connect theory with field practice',
+      ],
+    },
+  ],
+  evidenceSections: [
+    {
+      eyebrow: 'Institutional Exposure',
+      title: 'Research and professional learning spaces',
+      text: 'Evidence of field learning across agricultural research institutions and technical events.',
+      items: [
+        {
+          label: 'Research field exposure',
+          title: 'Potato field research team',
+          imageKey: 'researchFavorite',
+          proof: ['Institutional field setting', 'Potato crop learning', 'Team-based research exposure'],
+        },
+        {
+          label: 'KALRO visit',
+          title: 'Crop research environments',
+          imageKey: 'researchKalro',
+          proof: ['FCRC Kabete exposure', 'Professional research context', 'Agricultural learning visit'],
+        },
+        {
+          label: 'Soil fertility',
+          title: 'Research observation',
+          imageKey: 'soilExperiment',
+          proof: ['Soil fertility experiment', 'Field trial awareness', 'Applied crop research'],
+        },
+      ],
+    },
+    {
+      eyebrow: 'Field Operations',
+      title: 'Soil, crop and agronomy work',
+      text: 'Practical exposure to crop monitoring, potato production, input preparation, and field operations.',
+      items: [
+        {
+          label: 'Crop monitoring',
+          title: 'Potato field checks',
+          imageKey: 'potatoMonitoring',
+          proof: ['Crop observation', 'Field data support', 'Production monitoring'],
+        },
+        {
+          label: 'Harvest proof',
+          title: 'Potato harvest support',
+          imageKey: 'agronomy',
+          proof: ['Harvest exposure', 'Post-harvest handling', 'Practical agronomy work'],
+        },
+        {
+          label: 'Field operations',
+          title: 'Input and spray support',
+          imageKey: 'potatoSprayer',
+          proof: ['Sprayer monitoring', 'Team field routines', 'Operational awareness'],
+        },
+      ],
+    },
+    {
+      eyebrow: 'Horticulture',
+      title: 'Greenhouse and nursery exposure',
+      text: 'Protected agriculture experience across tomato production, seedlings, and floriculture settings.',
+      items: [
+        {
+          label: 'Greenhouse crops',
+          title: 'Tomato production setting',
+          imageKey: 'hero',
+          proof: ['Protected crop exposure', 'Greenhouse environment', 'Horticulture awareness'],
+        },
+        {
+          label: 'Nursery work',
+          title: 'Seedling inspection',
+          imageKey: 'nursery',
+          proof: ['Seedling observation', 'Nursery handling', 'Crop establishment exposure'],
+        },
+        {
+          label: 'Protected agriculture',
+          title: 'Floriculture exposure',
+          imageKey: 'floriculture',
+          proof: ['Greenhouse production', 'Crop care observation', 'Horticulture diversity'],
+        },
+      ],
+    },
+    {
+      eyebrow: 'Teaching & Extension',
+      title: 'Communication and knowledge transfer',
+      text: 'Evidence of agricultural teaching, practical demonstrations, and learner support.',
+      items: [
+        {
+          label: 'Practical teaching',
+          title: 'Agriculture and poultry session',
+          imageKey: 'teaching',
+          proof: ['Biology and Agriculture teaching', 'Practical demonstration', 'Student learning support'],
+        },
+      ],
+    },
+    {
+      eyebrow: 'Livestock Exposure',
+      title: 'Animal production learning',
+      text: 'Broader agriculture exposure through dairy, young stock care, and small livestock units.',
+      items: [
+        {
+          label: 'Dairy practical',
+          title: 'Milking exposure',
+          imageKey: 'livestock',
+          proof: ['Dairy unit routines', 'Hands-on livestock exposure', 'Animal production basics'],
+        },
+        {
+          label: 'Young stock care',
+          title: 'Calf feeding',
+          imageKey: 'livestockCalf',
+          proof: ['Feeding routines', 'Dairy management exposure', 'Care observation'],
+        },
+        {
+          label: 'Livestock units',
+          title: 'Sheep and goat exposure',
+          imageKey: 'sheepGoatUnit',
+          proof: ['Small stock unit visit', 'Animal handling awareness', 'Production system exposure'],
+        },
       ],
     },
   ],
@@ -174,5 +364,5 @@ export const portfolio = {
     'Job Readiness',
     'Leadership Training',
   ],
-  gallery: ['agronomy', 'teaching', 'research', 'livestock', 'gallery'],
+  gallery: ['informationResourceCentre', 'sugarResearchGroup', 'potatoTeamVisit', 'inputPreparation', 'dairyUnitTeam'],
 }
