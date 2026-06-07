@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -17,5 +18,9 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
   min-height: 100vh;
 }
